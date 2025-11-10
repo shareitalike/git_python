@@ -16,3 +16,5 @@ print(s3[2])
 
 print(s3[-2])
 
+print(str(False))
+print(str(false))
