@@ -17,4 +17,15 @@ print(s3[2])
 print(s3[-2])
 
 print(str(False))
-print(str(false))
+print(5**2)
+print(5*2)
+
+num1=100
+num2=100
+print(num1==num2)
+
+name ="mark"
+age=25
+print(name=="mark" or name=="john" and age<18)
+
+print((name=="mark" or name=="john") and age<18)
