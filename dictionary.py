@@ -34,7 +34,7 @@ print("not in eg ","maths" not in m)
 m2= {'label tea':10, 'vitamins':20}
 m.update(m2)
 print(m)
-#pop
+#pop to delete
 m.pop('phy')
 print(m)
 
@@ -43,3 +43,45 @@ print(m)
 
 m2= {'label tea':10, 'vitamins':20, 'label tea':40}
 print(m2)
+
+#not allowed keys: list, set , dict -- these are mutable
+#allowed keys: float, integers ,tuples are allowed but not lists --these are immutable datatypes
+d1={'nine':9,'four':[1,7,9]}
+print(d1)
+print(d1['four'][2])
+d1={'True':9,'False':4}
+print(d1)
+d1={(1,2,3),(4,5,6)}
+print(d1,type(d1))
+#value can be of any datatype
+print(len(d1))
+
+#fetch() the keys
+print(m2.keys(),type(m2.keys()))
+#to get only the values and another datatype created for values
+print(m2.values(), type(m2.values()))
+#items() gives full data as tuple presentation in print
+print(m2.items(),type(m2.items()))
+
+########### SHallow dep copy#########
+import copy
+l1=[1,2.5,[10,10,30],'python']
+#Shallow copy
+l2 = copy.copy(l1)
+print(id(l1),l1)
+print(id(l2),l2)
+l1[1]=100
+#innner element chnage in l1 can reflect in l2
+l1[2][0]=11
+print("with copy ",id(l1),l1)
+print("with copy ",id(l2),l2)
+#innner element chnage in l1 can reflect in l2 -- so use deepcopy as below
+#deepcopy copies all the changes in l1 to l2
+# l2=copy.deepcopy(l1)
+l1[1]=101
+l1[2][0]=12
+l2=copy.deepcopy(l1)
+print("with deepcopy ",id(l1),l1)
+print("with copy ",id(l2),l2)
+
+
