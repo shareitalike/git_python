@@ -5,7 +5,7 @@
 seq= {1,2,3,4,5}
 odd = lambda x:True if x % 2 !=0 else False
 filtered_output=filter(odd, seq)
-print(filtered_output)
+print("first",filtered_output)
 
 #above code merged into one line
 seq= {1,2,3,4,5}

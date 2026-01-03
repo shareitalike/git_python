@@ -83,14 +83,37 @@ match_obj=re.search(pat,emails)
 print(match_obj,"group verify")
 
 
-s7 = " We are learnign regex in pu=ython"
+s7 = " We are learning regex in python"
 # pat = r"[A-Z]{a-z}"
 pat = r"[A-Z][a-z]"
 match_obj7 = re.search(pat,s7)
 print(match_obj7)
 #match() function
 match_obj7 = re.match(pat,s7)
-print(match_obj7)
+print("search and match diff ",match_obj7)
+#####################################################
+import re
+
+text = "Hello World"
+
+# Match only at the beginning
+result = re.match("Hello", text)
+print(result)   # ✅ Match object
+
+result = re.match("World", text)
+print(result)   # ❌ None (because "World" is not at the start)
+
+import re
+
+text = "Hello World "
+
+# Search anywhere in the string
+result = re.search("World", text)
+print(result)   # ✅ Match object
+
+result = re.search("Python", text)
+print(result)   # ❌ None (not found)
+#############################################################
 
 match_obj7 = re.findall(pat,s7)
 print(match_obj7)
