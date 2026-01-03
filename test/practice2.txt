@@ -1,0 +1,7 @@
+ this is done using w mode 
+ and this is line 2 
+ this is line 3
+this is done using a mode
+printed using append mode
+a modes create the file also
+if it is not present

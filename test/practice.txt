@@ -1,0 +1,2 @@
+hi there
+#Modes(r, x, w, a, t, b => rt is the default mode)
