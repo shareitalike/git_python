@@ -1,0 +1,22 @@
+{
+   "student1": {
+      "roll": 101,
+      "name": "student1",
+      "sports": "hio"
+   },
+   "student2": {
+      "roll": 102,
+      "name": "student2",
+      "sports": false
+   },
+   "student3": {
+      "roll": 103,
+      "name": "student3",
+      "sports": 6
+   },
+   "student4": {
+      "roll": 104,
+      "name": "student4",
+      "sports": false
+   }
+}
